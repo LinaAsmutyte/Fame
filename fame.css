@@ -1,0 +1,239 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    background-image: url(./images/sky.jpg) ;
+    width: 100vw;
+    margin: 0;
+    height: calc(100vh/3*2);
+}
+header {
+    color: #ffff;
+    width: 100vw;
+    padding: 20px 0px;
+    word-spacing: 20px;
+    text-align: center;
+}
+.fame {
+    color: #5bb02e;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.nav-links {
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 100%;
+}
+.burger {
+    background-color: black;
+    color: #ffff;
+    font-size: 20px;
+    display: none;
+    padding-right: 50px;
+}
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+main {
+    color: #ffff;
+}
+h1 {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 55px;
+    text-align: center;
+    padding: 40px 80px 20px 80px;
+    margin: 0;
+}
+span {
+    color: #5bb02e;
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffff;
+    padding: 20px 300px;
+    margin: 0px;
+}
+.buttons {
+    border-radius: 3px;
+    padding: 40px 100px;
+    text-align: center;
+}
+button {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+}
+.greenbutton {
+    background-color: #5bb02e;
+}
+footer {
+    display: grid;
+    gap: 30px;
+    text-align:center;
+    justify-self: center;
+    padding: 10px 50px;
+}
+.sparkles {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.gift {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.wordpress {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.plug {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+i {
+    background-color: #5bb02e;
+    color: #ffff;
+    font-size: 50px;
+    padding: 10px;
+    margin: 0px
+}
+.name {
+    font-family: 'Franklin Gothic Medium';
+    text-transform: uppercase;
+    color: #474545;
+}
+p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #474545;
+}
+@media  (max-width: 1200px) {
+    .nav-links {
+        word-spacing: 10px;
+        font-size: 10px;
+    }
+    .fame {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media  (max-width: 992px) {
+    .burger {
+        display: block;
+        float: right;
+        margin: 0;
+    }
+    .nav-links {
+        display: none;
+    }
+    .fame {
+        text-align: left;
+    }
+    h1 {
+        margin: 0;
+    }
+    .text {
+        padding: 30px 150px;
+    }
+    .name {
+        font-size: 15px;
+    }
+}
+@media  (max-width: 768px) {
+    i {
+        font-size: 35px;
+    }
+    .buttons {
+        padding-top: 20px;
+    }
+    .text {
+        padding: 15px 40px;
+    }
+    footer {
+        gap: 10px;
+        grid-template-rows: auto;
+    }
+    .sparkles {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .gift {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .wordpress {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .plug {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+@media  (max-width: 480px) {
+    .buttons {
+        padding: 10px 50px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 40px;
+        padding: 20px 40px 20px 40px;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    footer {
+        gap: 10px;
+    }
+    .sparkles {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .gift {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .wordpress {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .plug {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
+
